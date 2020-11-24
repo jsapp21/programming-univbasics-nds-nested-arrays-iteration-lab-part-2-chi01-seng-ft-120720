@@ -11,6 +11,7 @@ def find_min_in_nested_arrays(src)
     inner_counter = 0
     smallest_number = src[counter][0]   
     while inner_counter < src[counter].count do
+      binding.pry 
       if src[counter][inner_counter] < smallest_number
         smallest_number = src[counter][inner_counter]
       end
